@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation Card Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="editor-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>All Pages</h3>
+            </div>
+            <div id="thumbnails">
+                <div class="page-thumbnail active" data-slide="0">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='500'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f6d365;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23aad88f;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='500' fill='url(%23grad1)'/%3E%3C/svg%3E"
+                        alt="Page 1">
+                    <span class="page-number">Page 1</span>
+                </div>
+                <div class="page-thumbnail" data-slide="1">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='500'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23fbc2eb;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23a6c1ee;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='500' fill='url(%23grad2)'/%3E%3C/svg%3E"
+                        alt="Page 2">
+                    <span class="page-number">Page 2</span>
+                </div>
+                <div class="page-thumbnail" data-slide="2">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='500'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff9a9e;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23fecfef;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='500' fill='url(%23grad3)'/%3E%3C/svg%3E"
+                        alt="Page 3">
+                    <span class="page-number">Page 3</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-left">
+                    <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+                    <h1 class="project-title">Invitation Card Editor</h1>
+                </div>
+                <div class="header-right">
+                    <button class="btn btn-save"><i class="fas fa-save"></i> Save</button>
+                    <button class="btn btn-download"><i class="fas fa-download"></i> Download</button>
+                </div>
+            </div>
+
+            <!-- Canvas Area -->
+            <div class="canvas-area">
+                <div class="canvas-wrapper">
+                    <div class="swiper mainSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <img class="slide-image"
+                                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='700'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23f6d365;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23aad88f;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='700' fill='url(%23grad1)'/%3E%3C/svg%3E"
+                                        alt="Slide 1">
+                                    <div class="text-overlay" contenteditable="true"
+                                        style="top: 30%; left: 10%; width: 80%; text-align: center; font-size: 28px; font-family: Georgia, serif; color: #2d3436; font-weight: bold;">
+                                        We invite you and your family's gracious presence and blessing</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <img class="slide-image"
+                                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='700'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23fbc2eb;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23a6c1ee;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='700' fill='url(%23grad2)'/%3E%3C/svg%3E"
+                                        alt="Slide 2">
+                                    <div class="text-overlay" contenteditable="true"
+                                        style="top: 40%; left: 10%; width: 80%; text-align: center; font-size: 24px; font-family: Arial, sans-serif; color: #2d3436;">
+                                        Join us for a celebration</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <img class="slide-image"
+                                        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='700'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff9a9e;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23fecfef;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='700' fill='url(%23grad3)'/%3E%3C/svg%3E"
+                                        alt="Slide 3">
+                                    <div class="text-overlay" contenteditable="true"
+                                        style="top: 35%; left: 10%; width: 80%; text-align: center; font-size: 26px; font-family: 'Courier New', monospace; color: #2d3436;">
+                                        Save the Date</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div class="panel-section">
+                <h4>Text Content</h4>
+                <div class="control-group">
+                    <label class="control-label">Edit Text</label>
+                    <textarea id="textContent" class="control-input" rows="3"
+                        placeholder="Select a text box to edit"></textarea>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <h4>Text Properties</h4>
+
+                <div class="control-group">
+                    <label class="control-label">Font Family</label>
+                    <select id="fontFamily" class="control-input">
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="Georgia, serif">Georgia</option>
+                        <option value="'Times New Roman', serif">Times New Roman</option>
+                        <option value="'Courier New', monospace">Courier New</option>
+                        <option value="Verdana, sans-serif">Verdana</option>
+                        <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+                        <option value="Impact, sans-serif">Impact</option>
+                        <option value="'Comic Sans MS', cursive">Comic Sans MS</option>
+                    </select>
+                </div>
+
+                <div class="control-row">
+                    <div class="control-group">
+                        <label class="control-label">Font Size</label>
+                        <div class="slider-container">
+                            <input type="range" id="fontSize" class="slider" min="12" max="72" value="24">
+                            <span class="slider-value" id="fontSizeValue">24px</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Color</label>
+                    <div class="color-picker-wrapper">
+                        <div class="color-preview" id="colorPreview" style="background: #2d3436;"></div>
+                        <input type="color" id="textColor" class="color-input" value="#2d3436">
+                        <input type="text" id="colorHex" class="control-input" value="#2d3436" style="flex: 1;">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Style</label>
+                    <div class="button-group">
+                        <button class="icon-btn" id="boldBtn"><i class="fas fa-bold"></i></button>
+                        <button class="icon-btn" id="italicBtn"><i class="fas fa-italic"></i></button>
+                        <button class="icon-btn" id="underlineBtn"><i class="fas fa-underline"></i></button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Alignment</label>
+                    <div class="alignment-group">
+                        <button class="icon-btn" data-align="left"><i class="fas fa-align-left"></i></button>
+                        <button class="icon-btn" data-align="center"><i class="fas fa-align-center"></i></button>
+                        <button class="icon-btn" data-align="right"><i class="fas fa-align-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Line Height</label>
+                    <div class="slider-container">
+                        <input type="range" id="lineHeight" class="slider" min="1" max="3" step="0.1" value="1.5">
+                        <span class="slider-value" id="lineHeightValue">1.5</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Letter Spacing</label>
+                    <div class="slider-container">
+                        <input type="range" id="letterSpacing" class="slider" min="-2" max="10" step="0.5" value="0">
+                        <span class="slider-value" id="letterSpacingValue">0px</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <button class="add-text-btn" id="addTextBtn">
+                    <i class="fas fa-plus"></i> Add Text
+                </button>
+                <button class="delete-text-btn" id="deleteTextBtn" disabled>
+                    <i class="fas fa-trash"></i> Delete Text
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
